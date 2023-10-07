@@ -51,6 +51,9 @@ function createShape(amountOfAggression){
     stroke("red")
     fill("red")
     beginShape()
+    if(amountOfAggression==0){
+        vertex(150,150)
+    }
     for(let i=0, len=amountOfAggression*3;i<len;i++){
         vertex(random(50, 250), random(50, 250))
     }
